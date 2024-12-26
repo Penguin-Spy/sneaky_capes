@@ -1,0 +1,37 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "${group}",
+		"id": "sneaky_capes",
+		"version": "${version}",
+		"metadata": {
+			"name": "Sneaky Capes",
+			"description": "Renders custom cape textures hidden in the unused portions of the player's skin texture.",
+			"contributors": {
+				"Penguin_Spy": "Author"
+			},
+			"contact": {
+				"homepage": "https://penguinspy.dev/projects/sneaky_capes/",
+				"issues": "https://github.com/Penguin-Spy/sneaky_capes/issues",
+				"sources": "https://github.com/Penguin-Spy/sneaky_capes"
+			},
+			"license": "MPL-2.0",
+			"icon": "assets/sneaky_capes/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.19.1"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.21.4"
+			}
+		]
+	},
+	"mixin": "sneaky_capes.mixins.json",
+	"minecraft": {
+		"environment": "client"
+	}
+}
